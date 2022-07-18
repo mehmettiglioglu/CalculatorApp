@@ -1,0 +1,68 @@
+.app{
+    width: 500px;
+    height: 700px;
+    border:1px solid red;
+    margin-left: 550px;   
+    background-color: salmon;
+    border-radius: 20px;
+    background-image:url(/calc.jpg); 
+}
+.input{
+    width: 400px;
+    height: 70px;
+    margin-top: 20px;
+    text-align: right;
+    font-family: monospace;
+    font-size: 50px;
+    border-radius: 20px;
+}
+.inputArea{
+    margin-top: 45px;
+    text-align: center;        
+}
+.symbols button{
+    width: 92px;
+    height: 70px;
+    margin-right: 10px;
+    font-size: 40px;
+    font-family: monospace;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.ml-45{
+    margin-left: 45px;
+}
+.equal{
+    display:flex;
+    float: right;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+#additionButton:hover{
+    transform:rotate(180deg);
+transition: all 1s;
+border-radius: 5%;
+}
+#divisionButton:hover{
+    transform:rotate(180deg);
+transition: all 1s;
+border-radius: 5%;
+}
+#subtractionButton:hover{
+    transform:rotate(180deg);
+transition: all 1s;
+border-radius: 5%;
+}
+#multiplyButton:hover{
+    transform:rotate(360deg);
+transition: all 1s;
+border-radius: 5%;
+}
+.equal:hover{
+    background-color: rgb(78, 129, 0);
+}
+.clear:hover{
+    background-color: rgb(231, 48, 48)   ;
+}
+
