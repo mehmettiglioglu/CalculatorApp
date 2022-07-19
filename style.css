@@ -40,23 +40,23 @@
     padding-left: 30px;
 }
 #additionButton:hover{
-    transform:rotate(180deg);
-transition: all 1s;
+    transform:rotate(360deg);
+transition: all 1.5s;
 border-radius: 5%;
 }
 #divisionButton:hover{
-    transform:rotate(180deg);
-transition: all 1s;
+    transform:rotate(360deg);
+transition: all 1.5s;
 border-radius: 5%;
 }
 #subtractionButton:hover{
-    transform:rotate(180deg);
-transition: all 1s;
+    transform:rotate(360deg);
+transition: all 1.5s;
 border-radius: 5%;
 }
 #multiplyButton:hover{
     transform:rotate(360deg);
-transition: all 1s;
+transition: all 1.5s;
 border-radius: 5%;
 }
 .equal:hover{
