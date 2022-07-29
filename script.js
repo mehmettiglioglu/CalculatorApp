@@ -1,30 +1,47 @@
 let inputDOM=document.querySelector(".input");
-let dotDOM=document.querySelector("#dot")
-let btnDOM=document.querySelectorAll(".btn");
-let equalButtonDOM=document.querySelector(".equal")
-let plusButtonDOM=document.querySelector("#additionButton")
-let results;
+let numberButtons=document.querySelectorAll(".btn")
+let operatorDOM=document.querySelectorAll(".operator");
+let equalDOM=document.querySelector(".equal")
+let clearDOM=document.querySelector("#clearButton");
 
-for(i of btnDOM){
-    i.addEventListener("click",(e)=>
-    inputDOM.value+=e.target.textContent
-    )
+
+
+document.body.addEventListener("keypress",(e)=>{
+    if(e.key=="Enter"){
+        calculate();
+    }
+    else{
+        inputDOM.value+=e.key;
+    }    
+})
+
+for(i of numberButtons)
+{
+    i.addEventListener("click",(e)=>{
+        if(inputDOM.value==0)
+        {
+            inputDOM.value="";
+        }
+        inputDOM.value +=e.target.value;
+    })
 }
 
-dotDOM.addEventListener("click",()=>{
-    console.log(inputDOM.value)
-    inputDOM.value=inputDOM.value + dotDOM.innerText;
+for(i of operatorDOM)
+{
+    i.addEventListener("click",(e)=>{
+        inputDOM.value += e.target.value;       
+    })
+}
+
+equalDOM.addEventListener("click",()=>{
+   inputDOM.value = eval(inputDOM.value)
 
 })
 
-plusButtonDOM.addEventListener("click",(e)=>{
-    inputDOM.value+=e.target.textContent;
-    results=parseInt(e.target.value)
-    console.log(results)
+clearDOM.addEventListener("click",()=>{
+    inputDOM.value= " "  
 })
 
-equalButtonDOM.addEventListener("click",()=>{
-   
-})
-
-
+function calculate(){
+    inputDOM.value=eval(inputDOM.value)
+}

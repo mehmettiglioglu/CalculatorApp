@@ -6,6 +6,7 @@
     background-color: salmon;
     border-radius: 20px;
     background-image:url(/calc.jpg); 
+    margin-top: 65px;
 }
 .input{
     width: 400px;
@@ -64,5 +65,11 @@ border-radius: 5%;
 }
 .clear:hover{
     background-color: rgb(231, 48, 48)   ;
+}
+body{
+    background-color:aliceblue;
+    background-image: url("https://ozenduvarkagidi.com.tr/images/urunler/Soft-Renk-Daglar-Cocuk-Odasi-Duvar-Kagidi-resim-13381.jpg");
+    
+    
 }
 

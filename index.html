@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
      <div class="app">
         <div class="inputArea">
-            <input class="input" type="text" readonly="readonly">
+            <input class="input" type="text">
         </div>
         <div class="symbols">
-            <button id="additionButton" class="ml-45">+</button>
-            <button id="subtractionButton">-</button>
-            <button id="multiplyButton">*</button>
-            <button id="divisionButton">/</button>
-            <button class="ml-45 btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
+            <button value="+" id="additionButton" class="ml-45 operator">+</button>
+            <button class="operator" value="-" id="subtractionButton">-</button>
+            <button class="operator" value="*" id="multiplyButton">*</button>
+            <button class="operator" value="/" id="divisionButton">/</button>
+
+
+            <button value="7" class="ml-45 btn">7</button>
+            <button value="8" class="btn">8</button>
+            <button value="9" class="btn">9</button>
+
             <button style="height:250px; margin-right: 45px;" class="equal">=</button>
-            <button class="ml-45 btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="ml-45 btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn" style="margin-left: 150px;">0</button>
-            <button id="dot">.</button>
+
+            <button value="4" class="ml-45 btn">4</button>
+            <button value="6" class="btn">6</button>
+            <button value="5" class="btn">5</button>
+
+            <button value="1" class="ml-45 btn">1</button>
+            <button value="2" class="btn">2</button>
+            <button value="3" class="btn">3</button>
+
+            <button value="0" class="btn" style="margin-left: 150px;">0</button>
+            <button value="." class="btn" id="dot">.</button>
             <button id="clearButton" class="clear">C</button>
-        </div>
-        
+        </div>        
      </div> 
+
 
   <script src="/script.js"></script>
 </body>
